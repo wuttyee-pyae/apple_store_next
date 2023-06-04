@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  background-color: white;
 }
 
 .description {
@@ -226,4 +226,13 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.image_container {
+  width: 100vw;
+  height: 50vh;
+}
+.image{
+  width: 100vw;
+  margin-bottom: 40px;
 }
