@@ -1,0 +1,264 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+  
+  .css_test{
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .footnotes{
+    border-bottom: 1px solid var(--footer-border-color);
+    padding: 17px 0 11px;
+    --footer-background: #f5f5f7;
+      --footer-border-color: #d2d2d7;
+      --footer-text-color: #6e6e73;
+      --footer-link-color: #424245;
+      --footer-pipe-color: #86868b;
+      --footer-directory-title-color: #1d1d1f;
+      --footer-directory-title-color-hover: #000;
+  }
+  .footnotes  ol li{
+        font-size: 12px;
+        line-height: 1.33337;
+        font-weight: 400;
+        color: #6e6e73;
+        letter-spacing: -.01em;
+        font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+        padding-bottom: 0.8em;
+      }
+  
+  .footnotes ul li{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    color: #6e6e73;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding-bottom: 0.8em;
+  }
+  
+  .navigation {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    color: #6e6e73;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+  
+  }
+  
+  .suv_navigation {
+    width: 20%;
+    float: left;
+    overflow: hidden;
+  }
+  
+  .suv_navigation h3 span{
+    font-size: 12px;
+      line-height: 1.33337;
+      font-weight: 400;
+      letter-spacing: -.01em;
+      font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+      font-weight: 600;
+      margin-right: 20px;
+      margin-bottom: 0.8em;
+      outline: none;
+      color: #000;
+  }
+  .icon {
+    display: none;
+  }
+  
+  .suv_navigation h3 button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -4px;
+    bottom: 0;
+    left: -4px;
+  }
+  
+  .suv_navigation ul li{
+      display: block;
+      pointer-events: auto;
+      margin-bottom: 0.8em;
+      cursor: pointer;
+  }
+  
+  .suv_navigation ul li:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Tablet and Smaller Desktop */
+  @media (min-width: 701px) and (max-width: 1120px) {
+    .grid {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .vercelLogo {
+      filter: invert(1);
+    }
+  
+    .logo {
+      filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  @media only screen and (max-width: 833px) {
+    .suv_navigation ul{
+     // display: none;
+    }
+    .suv_navigation{
+      width: 100%;
+      overflow: hidden;
+      div{
+        border-bottom: 1px solid #d2d2d7;
+        line-height: 35px;
+      }
+    }
+    .icon {
+        display:flex;
+        float: right;
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: -2px;
+        margin-right: 8px;
+        transition: transform .3s ease
+    }
+    
+  }
+  .ft_breadcrumbs {
+    padding: 17px 0;
+    position: relative;
+    z-index: 1;
+    color: var(--footer-link-color);
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    color: #6e6e73;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding-bottom: 0.8em;
+    .apple{
+      float: left;
+      margin: 3px 10px 0 0;
+    }
+    ol {
+      li{
+        margin-right: 7px;
+      float: left;
+      padding: 3px 4px 3px 0;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      float: left;
+      }
+    }
+  }
+  
+  .df_footer {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 34px;
+    border-top: none;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    color: #6e6e73;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+  
+    .shop{
+      margin-bottom: 7px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d2d2d7;
+      a{
+        color: #06c;
+        text-decoration: underline;
+      }
+  
+    }
+    .locale{
+      float: right;
+      margin-top: 5px;
+      position: relative;
+      top: -3px;
+      z-index: 2;
+      white-space: nowrap;
+    }
+    .legal{
+      position: relative;
+      top: -3px;
+      z-index: 1;
+      ul {
+        li{
+          list-style-type: none;
+          border-right: 1px solid #d2d2d7;
+          margin-right: 7px;
+          display: inline-block;
+          margin-top: 5px;
+          a{
+            padding-right: 10px;
+            display: inline-block;
+            white-space: nowrap;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        :last-child{
+          border-right: none;
+        }
+      }
+    }
+  }
+  .u_state{
+    float: right;
+  }
+  
+  @media only screen and (max-width: 833px) {
+    .df_footer {
+        padding-top:17px
+    }
+  }
+  
+  @media only screen and (max-width: 833px) {
+   .shop {
+        border-bottom:none
+    }
+  }
+  
+  .nowrap {
+    white-space: nowrap
+  }
+  
+  .buystrip {
+    text-align: center
+  }
+  
+  
+  
